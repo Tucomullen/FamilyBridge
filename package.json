@@ -1,0 +1,9 @@
+{
+  "name": "familybridge",
+  "private": true,
+  "version": "0.0.1",
+  "scripts": {
+    "dev:mobile": "cd apps/mobile && npm start"
+  }
+}
+
