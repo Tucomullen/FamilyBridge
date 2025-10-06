@@ -10,9 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.2.2
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.0.4
         with:
           node-version: '20.x'
           cache: 'npm'
@@ -26,7 +26,7 @@ jobs:
         run: |
           if [ -d apps/web ]; then cd apps/web && npm run -s lint || true; fi
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v5.1.1
         with:
           python-version: '3.11'
       - name: Install server deps
