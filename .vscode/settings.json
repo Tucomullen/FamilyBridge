@@ -1,0 +1,8 @@
+{
+  "github-actions.workflows.validate.enabled": false,
+  "problems.exclude": {
+    "**/.github/workflows/*.yml": true,
+    "**/.github/workflows/*.yaml": true
+  }
+}
+
